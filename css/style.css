@@ -1,0 +1,230 @@
+#main{
+	font-size: 30px;
+	font-weight: bolder;
+	font-family: "jost";
+	color: darkmagenta;
+	text-align: center;
+	margin: 50px;
+}
+
+body{
+	background-image: url(../images/leaf-sketch4.jpeg);
+}
+.title{
+  background-color: #707070;
+  background-image: url("../images/houseplant-pots1.jpeg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: auto;
+}
+.title p{
+	background: rgba(255, 255, 255);
+	width: 80%;
+	margin: auto;
+}
+
+#intro p{
+	background: rgba(255, 255, 255);
+	width: 80%;
+	margin: auto;
+}
+#intro img{
+	display: block;
+	margin: auto;
+	animation: grow 5s ease-in
+} 
+
+nav{
+	background-color: white;
+	display: flex;
+    flex-direction:column;
+	
+}
+nav li{
+	padding: 12px;
+	margin: 2px;
+	width: 20%;
+	border-radius: 15px;
+	background-color: lightsteelblue;
+	display: inline-block;
+}
+.active{
+	background-color: lightgreen;
+	font-weight: bold;
+	border: 3px solid black;
+	font-style: italic;
+}
+
+.container{
+	display: grid;
+  	grid-template-columns: 1fr 2fr;
+	align-items: center;
+}
+
+/* .container p{
+	background: rgba(219,201,171, 0.5);
+	margin: 60px;
+} */
+
+ h1{
+	font-size: 30px;
+	font-weight: bolder;
+	color: #c99585;
+	margin: 20px;
+	font-family: Jost, Arial, Helvetica, sans-serif;
+	padding: 10px;
+}
+
+h2{
+	font-size: 20px;
+	font-weight: bold;
+	color: darkblue;
+	margin: 10px;
+	font-family: Jost, Arial, Helvetica, sans-serif;
+	padding: 10px;
+}
+
+h3{
+	font-size: 15px;
+	font-weight: normal;
+	color: black;
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 10px;
+}
+
+p{
+	font-size: 15px;
+	font-family: Jost,Arial, Helvetica, sans-serif;
+	padding: 10px;
+	max-width: 1000px;
+}
+
+img{
+	margin: 20px;
+	width: 300px;
+	padding: 10px;
+}
+img:hover{
+	 filter: grayscale();
+ }
+
+
+.figures{
+	display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+figure{
+	display: flex;
+	flex-direction: row;
+	/* grid-template-columns: 1fr 1fr 2fr; */
+	 background: rgba(219,201,171, 0.5);
+	 margin: 50px;
+	 border-radius: 20px;
+	
+}
+figcaption{
+	min-width: 100px;
+}
+/* figure figcaption{
+	display: grid;
+	flex-direction: row;
+	flex-wrap: wrap;
+	grid-template-columns: 2fr 1fr;
+	row-gap: 30px;
+} */
+footer{
+	background-color: cadetblue;
+	padding: 32px 8px;
+	margin-top: 100px;
+}
+
+/* conact-form CSS */
+
+.fa-solid fa-leaf{
+	font-family: "Font Awesome 5 Brands"; 
+	font-weight: 400;
+	content: "\f099";
+}
+form {
+	border: 3px solid #f1f1f1;
+	background-color: #dbc9ab;
+	border-radius: 20px;
+  }
+  
+legend{ 
+	display: block;
+	font-size: 200%;
+	font-style: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+label{
+	display: block;
+	margin-right:10px;
+	width:100%;
+}
+input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+span{
+	margin-left:20%;
+	font-family: italic;
+	font-weight: bold;
+}
+
+textarea{
+	width: 100%;
+	height: 35vh;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+
+input[type=checkbox]{
+	display:inline;
+	width:inherit;
+}
+
+input[type=submit] {
+	display: block;
+	margin: auto;
+	background-color: #8c9d75;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+	border-radius: 20px;
+}
+
+input[type=submit]:hover {
+	opacity: 0.8;
+}
+
+@keyframes grow {
+    from {
+        width: 25px;
+        opacity: 0;
+    }
+    to {
+        width:475px;
+        opacity: 1;
+    }
+}
