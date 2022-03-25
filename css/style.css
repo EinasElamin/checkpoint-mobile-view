@@ -1,7 +1,7 @@
 #main{
 	font-size: 30px;
 	font-weight: bolder;
-	font-family: "jost";
+	font-family: Jost, Arial, Helvetica, sans-serif;
 	color: darkmagenta;
 	text-align: center;
 	margin: 50px;
@@ -226,5 +226,11 @@ input[type=submit]:hover {
     to {
         width:475px;
         opacity: 1;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    #intro img{
+        animation: initial;
     }
 }
